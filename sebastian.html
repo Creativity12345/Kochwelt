@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept Focaccia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js"></script>
+</head>
+<body onload="render(ingredientsFocaccia,amountFocaccia); includeHTML()">
+
+    <!-- Header -->
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="container-recipe padding">
+        <h2>Focaccia</h2>
+        <img class="crossaint" src="img/Focaccia.jpg" alt="" srcset="">  
+        <div class="icons-container-top">
+            <p> <img src="img/clock-regular.svg" alt=""> 15min</p> 
+            <p> <img src="img/brain-solid.svg" alt=""> simpel</p> 
+            <p> <img src="img/calendar-alt-regular.svg" alt=""> 5.10.2022</p> 
+        </div>
+    </div>    
+    <div class="padding">
+        <div class="portion">
+                <p>Zutaten für</p>
+                <input id="inputfield" required type="number" min="1" placeholder="4">
+                <button onclick="showMorePortions(ingredientsFocaccia,amountFocaccia)" class="button" >Portion(en)</button>
+        </div>
+    </div>    
+    <div class="padding" id="table">
+        <table  style="width: 100%; margin-top: 24px;" id="ingredients"></table>
+    </div>
+    <div class="preparation padding">
+        <h2>Zubereitung</h2>
+        <div class="icons-container">
+            <p><img src="img/clock-regular.svg" alt="">Arbeitszeit ca. 30 Minuten</p>
+            <p><img src="img/clock-regular.svg" alt="">Gesamtzeit ca. 75 Minuten</p>
+        </div>
+        <div>
+            <p><b>1.</b> Mehl, Zucker, Hefe und Salz in einer großen Rührschüssel mit einem Schneebesen vermischen.</p>
+            <p><b>2.</b> Wasser und Olivenöl dazu gießen und alles mit einem Teigschaber (oder Holzlöffel) verrühren, bis die Mischung zusammenklumpt.</p>
+            <p><b>3.</b> Dann auf eine Arbeitsfläche geben und den Händen ca. 5-10 Minuten kneten (oder eine Küchenmaschine mit Knethaken verwenden), bis sich ein glatter geschmeidiger Teig bildet. (Wenn der Teig viel zu klebrig ist, füge mehr Mehl hinzu, aber versuche, so wenig Mehl wie möglich zu verwenden, wenn du ein weiches Focaccia möchtest.)</p>
+            <p><b>4.</b> Den Teig anschließend zu einer Kugel formen und in eine leicht geölte Schüssel legen. Die Schüssel mit einem Küchentuch abdecken und an einen warmen Ort stellen (ich stelle meine gerne ans Sonnen-Fenster). Lasse den Teig dort 45-60 Minuten gehen, bis sich der Teig fast verdoppelt hat.</p>
+            <p><b>5.</b> Anschließend den Teig auf eine leicht bemehlte Oberfläche geben und zu einem ca. 1cm dicken großen Rechteck (oder Kreis) ausrollen (*siehe Notiz). In eine geölte Backform legen (oder großes Backblech) legen und mit den Händen in die Ecken ziehen. Die Form abdecken und den Teig weitere 20 Minuten gehen lassen.</p>
+            <p><b>6.</b> Währenddessen den Ofen auf 200°C vorheizen (ca. 10 Minuten bevor der Teig komplett aufgegangen ist).</p>
+            <p><b>7.</b> Nach der Ruhezeit mit dem Stiel eines Kochlöffels oder mit den Fingern Löcher in den Focaccia-Teig drücken, wie auf den Bildern oben zu sehen ist. Dann die Kirschtomaten, Oliven und Rosmarin auf den Teig legen und leicht hineindrücken. Zuletzt ca. 1-2 EL Olivenöl gleichmäßig über den Teig träufeln und mit Salz und Paprikapulver bestreuen.</p>
+            <p><b>8.</b> Das Focaccia ca. 20 Minuten backen oder bis der Teig leicht goldbraun und durchgebacken ist. Anschließend aus dem Ofen nehmen und auf Wunsch mit etwas mehr Olivenöl beträufeln.</p>
+            <p><b>9.</b> In Scheiben oder Stücke schneiden und warm genießen!</p>
+        </div>
+        <div>
+            <h4>Rezept erstellt von</h4>
+        </div>
+        <div style="display: flex; padding-bottom: 24px;">
+            <img class="profile-img" src="img/sebastian.jpg" alt=""> <p style="margin-left: 24px; margin-top: 30px;"><b>Sebastian</b></p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div w3-include-html="templates/footer.html"></div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+
+    <!-- Header -->
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="food-container-top padding">
+
+        <img src="img/kürbis.jpg" alt="">
+        <div class="food-item-top">
+            <h2>Kürbiscremesuppe</h2>
+            <p>ganz einfache Kürbiscremesuppe (ohne Orangen etc., nichts ausgefallenes)</p>
+            <button class="button-recipe"><a href="rezept.html">Rezept öffnen</a></button>
+        </div>
+    </div>
+    <div class="bg-gray">
+        <h3>Lust auf was neues?</h3>
+        <div class="food-container-middle padding">
+            <div class="item">
+                <a href="dorian.html">
+                    <img src="img/pancake.jpg">
+                </a>
+                <p><b>Pfannkuchen</b></p>              
+            </div>
+            <div class="item">
+                <a href="sebastian.html">
+                    <img src="img/Focaccia.jpg">
+                </a>
+                <p><b>Focaccia</b></p>
+            </div>
+            <div class="item">
+                <a href="tekin.html">
+                    <img src="img/brownie.jpg">
+                </a>
+                <p><b>Schoko-Brownies</b></p>
+            </div>
+        </div>   
+    </div> 
+    <div style="padding-top: 20px;">
+        <h3>Pfanne vs Wok?</h2>
+        <div class="food-container-bottom padding">
+            <p class="p-bottom">Das Material des Wokgefässes und die leichte Wendbarkeit der Speisen im Wok erlauben eine hohe Hitze und damit eine kurze Garzeit. Die kurzen Garzeiten wiederum bringen zusätzlich den Vorteil, dass das Gemüse besonders knackig und schmackhaft bleibt und Vitamine und andere wertvolle Stoffe weniger zerstört werden.</p>
+            <img src="img/wok.jpg" alt="">
+        </div>
+    </div>  
+
+    <!-- Footer -->
+    <div w3-include-html="templates/footer.html"></div>
+     
+</body>
+</html>

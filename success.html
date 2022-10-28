@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js"></script>
+
+    <title>Kochwelt</title>
+
+</head>
+
+<body onload="includeHTML()">
+
+    <!-- Header -->
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="success-div">
+        <h2>Vielen Dank für die Kontaktaufnahme. Ihre E-Mail wurde erfolgreich gesendet!</h2>
+        <span>Deine Daten werden gemäß Datenschutzgesetzes vertraulich behandelt. Die Daten werden nicht für Werbezwecke
+            genutzt.</span>
+        <section class="backtoHome-Container">
+
+            <div><a href="https://gruppe-339.developerakademie.net/Leo/index.html"><button class="button-contact">Zurück zur
+                        Startseite</button></a></div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-position">
+        <div w3-include-html="templates/footer.html"></div>
+    </div>
+</body>
+
+</html>

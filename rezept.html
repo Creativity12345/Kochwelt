@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept Kürbiscremesuppe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js"></script>
+</head>
+<body onload="render(ingredientsCrossaints,amountCrossaints); includeHTML()">
+
+    <!-- Header -->
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="container-recipe padding">
+        <h2>Kürbiscremesuppe</h2>
+        <img class="crossaint" src="img/kürbis.jpg" alt="" srcset="">  
+        <div class="icons-container-top">
+            <p> <img src="img/clock-regular.svg" alt=""> 30min</p> 
+            <p> <img src="img/brain-solid.svg" alt=""> simpel</p> 
+            <p> <img src="img/calendar-alt-regular.svg" alt=""> 5.10.2022</p> 
+        </div>
+    </div>    
+    <div class="padding">
+        <div class="portion">
+            <p>Zutaten für</p>
+            <input id="inputfield" placeholder="4" type="number" min="1">
+            <button class="button" onclick="showMorePortions(ingredientsCrossaints,amountCrossaints)">Portion(en)</button>
+        </div>
+    </div>    
+    <div class="padding" id="table">
+        <table  style="width: 100%; margin-top: 24px;" id="ingredients"></table>
+    </div>
+    <div class="preparation padding">
+        <h2>Zubereitung</h2>
+        <div class="icons-container">
+            <p><img src="img/clock-regular.svg" alt="">Arbeitszeit ca. 10 Minuten</p>
+            <p><img src="img/clock-regular.svg" alt="">Gesamtzeit ca. 20 Minuten</p>
+        </div>
+        <div>
+            <p><b>1.</b> Das Kürbisfleisch würfeln, die Kartoffeln schälen und auch würfeln. Den Lauch waschen und in Streifen schneiden. Die Butter erhitzen und das Gemüse darin anschwitzen.</p>
+            <p><b>2.</b> 1 Liter Wasser aufgießen mit dem Brühwürfel, Salz und Pfeffer würzen. Bei mittlerer Hitze ca. 30 Minuten weich kochen. Nach Ende der Garzeit alles pürieren. Mit Kräutern garnieren.</p>
+        </div>
+        <div>
+            <h4>Rezept erstellt von</h4>
+        </div>
+        <div style="display: flex; padding-bottom: 24px;">
+            <img class="profile-img" src="img/leo.jpg" alt=""> <p style="margin-left: 24px; margin-top: 30px;"><b>Leonardo van Dahl</b></p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div w3-include-html="templates/footer.html"></div>
+
+</body>
+</html>

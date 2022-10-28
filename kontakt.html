@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js"></script>
+
+    <title>Kochwelt</title>
+
+</head>
+<body onload="includeHTML()">
+
+    <!-- Header -->
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="contact-div">
+        <form class="form-container" action="https://gruppe-339.developerakademie.net/Leo/send_mail.php" method="post">
+            <p>Dein Name:</p>
+            <input class="input-contact" name="name" placeholder="Vor- und Nachname" type="text" required> 
+            <p>Deine Telefonnummer:</p>
+            <input class="input-contact" type="number" required placeholder="Bsp.: 0123 4567890">
+            <p>Deine E-Mail-Adresse:</p>
+            <input class="input-contact" type="email" required placeholder="beispiel@bsp.de">
+            <p>Deine Nachricht an uns:</p>
+            <textarea class="textarea-contact" name="message" type="text" required placeholder="Nachricht eingeben..."></textarea>
+            <button class="button-contact" type="submit">Mail senden</button>
+        </form>
+    </div>    
+
+    <!-- Footer -->
+    <div w3-include-html="templates/footer.html"></div> 
+    
+</body>
+</html>

@@ -1,0 +1,913 @@
+body {
+    margin: 0px;
+    font-family: 'Raleway';
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.header {
+    position: relative;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2px;
+    box-shadow: rgb(50 50 93 / 10%) 0px 6px 12px -2px, rgb(0 0 0 / 15%) 0px 3px 7px -3px;
+}
+
+.header-div img {
+    position: absolute;
+    width: 285px;
+    top: 15px;
+    object-fit: contain;
+}
+
+.navbar {
+    display: flex;
+    align-items: flex-end;
+}
+
+/*navbar*/
+
+.navbar-contact {
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar-contact a {
+    font-weight: 500;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    margin-left: 16px;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-contact a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: -2px;
+    left: 0;
+    background-color: #007c11;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar-contact a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-contact {
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar a {
+    font-weight: 500;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    margin-left: 16px;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: -2px;
+    left: 0;
+    background-color: #007c11;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#menubar a {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+    position: relative;
+}
+
+
+#menubar a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: -2px;
+    left: 0;
+    background-color: #007c11;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#menubar a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+/*navbar end*/
+
+.food-container-top {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.food-container-top img {
+    object-fit: cover;
+    height: 250px;
+    width: 350px;
+    border-radius: 8px;
+}
+
+.food-item-top {
+    padding-left: 32px;
+}
+
+h3 {
+    margin: 0px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.food-container-middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.food-container-middle img {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.food-container-middle img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease-in-out 125ms;
+}
+
+.backtoHome-Container {
+    transition: all 125ms ease-in-out;
+}
+
+.button {
+    font-family: 'Raleway';
+    cursor: pointer;
+    background-color: #007c11;
+    color: white;
+    border: none;
+    height: 34px;
+    width: 170px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+    transition: all 925ms ease-out;
+}
+
+.button:hover {
+    opacity: 0.9;
+    transition: all 925ms ease-out;
+}
+
+.button-recipe {
+    font-family: 'Raleway';
+    cursor: pointer;
+    background-color: #007c11;
+    color: white;
+    border: none;
+    height: 34px;
+    width: 170px;
+    margin-top: 64px;
+    border-radius: 4px;
+}
+
+.button-recipe:hover {
+    opacity: 0.9;
+}
+
+.button-contact {
+    font-family: 'Raleway';
+    cursor: pointer;
+    background-color: #007c11;
+    color: white;
+    border: none;
+    height: 34px;
+    width: 170px;
+    margin-top: 30px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+}
+
+.button-contact:hover {
+    opacity: 0.9;
+}
+
+.button-recipe a {
+    font-family: 'Raleway';
+    color: white;
+    text-decoration: none;
+    transition: all 125ms ease-out;
+}
+
+.item {
+    text-align: center;
+
+}
+
+.bg-gray {
+    background-color: lightgray;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.food-container-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.p-bottom{
+    width: 70%; 
+    margin:0px;
+}
+
+.food-container-bottom img {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 8px;
+    margin-left: 16px;
+    margin-bottom: 64px;
+}
+
+
+/* CSS for Recipe Page*/
+.container-recipe {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.icons-container {
+    display: flex;
+    gap: 16px;
+    text-align: center;
+}
+
+.icons-container p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(192, 192, 192);
+    height: 30px;
+    border-radius: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.icons-container img {
+    height: 15px;
+    width: 15px;
+    margin-right: 4px;
+}
+
+.icons-container-top {
+    display: flex;
+    gap: 16px;
+    text-align: center;
+}
+
+.icons-container-top p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(192, 192, 192);
+    height: 30px;
+    border-radius: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.icons-container-top img {
+    height: 15px;
+    width: 15px;
+    margin-right: 4px;
+}
+
+.crossaint {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.portion {
+    display: flex;
+}
+
+.portion p {
+    margin-top: 6px;
+    padding-right: 12px;
+}
+
+input {
+    height: 30px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: solid 0.4px lightgray;   
+}
+
+.ingredients {
+    height: 48px;
+    width: 100%;
+}
+
+/*Table*/
+
+table tbody:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+td {
+    border-radius: 24px;
+    padding-left: 24px;
+}
+
+
+.profile-img {
+    object-fit: cover;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+}
+
+/*Footer*/
+
+.footer-Section {
+    background-color: rgb(90, 89, 89);
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+.footer-Menus {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.footer-Section a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-Menus a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.footer-Menus a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.footer-Menus a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.footer-Container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-Logo-Container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.footer-Logo-Container p {
+    color: white;
+    font-size: 16px;
+}
+
+.socialMediaLinks {
+    display: flex;
+}
+
+.socialMediaLinksSize {
+    width: 50px;
+    padding: 10px 10px 10px 0px;
+    object-fit: contain;
+}
+
+.header-Logo {
+    width: 285px;
+}
+
+.footer-position{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/*CSS for Contact*/
+.form-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    width: 400px;
+    border: 3px solid green;
+    border-radius: 16px;
+}
+
+.contact-div {
+    background-image: url(img/contact.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.textarea-contact {
+    font-family: 'Raleway';
+    color: black;
+    height: 150px;
+    width: 70%;
+    background-color: rgb(51, 50, 50, 0.1);
+}
+
+.input-contact {
+    font-family: 'Raleway';
+    color: black;
+    width: 70%;
+    background-color: rgb(51, 50, 50, 0.1);
+    border-color: rgb(138, 137, 137);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* CSS for Contact-Success-Page */
+.backtoHome {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    background-color: green;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 10px 40px 10px 40px;
+    transition: all 125ms ease-in-out;
+}
+
+.backtoHome-Container a {
+    text-decoration: none;
+    font-family: 'Raleway';
+}
+
+.backtoHome:hover {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    background-color: #3ca13c;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 10px 40px 10px 40px;
+    transition: all 125ms ease-in-out;
+}
+
+.backtoHome-Container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.success-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 105px;
+    margin-bottom: 105px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.responsive-menu{
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color:rgba(0, 0, 0, 0.8);
+    height: 166px;
+}
+
+#menubar p{
+    color: whitesmoke;
+    margin: 0px;
+    font-weight: bold;
+    width: 19px;
+}
+
+.menubar p:hover{
+    color: #007c11;
+}
+
+
+/*css for Impressum*/
+.privacy {
+    padding: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+
+/*padding left and rigth*/
+.padding {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.d-none{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1350px) {
+
+    .navbar a {
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (max-width: 1180px) {
+
+    .navbar {
+        padding-top: 98px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .button-recipe {
+        margin-top: 30px;
+    }
+
+    .padding {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2px;
+    }
+
+    .header-div img {
+        position: relative;
+    }
+
+    .navbar {
+        padding-top: 0px;
+    }
+
+    .navbar a {
+        margin-left: 0px;
+        margin-right: 16px;
+    }
+
+    .food-container-middle img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .food-container-top {
+        align-items: center;
+    }
+
+    .food-container-top img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .food-container-top {
+        flex-direction: column;
+    }
+
+    .food-item-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .food-item-top p {
+        margin: 0;
+    }
+
+    h2 {
+        margin-top: 14px;
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    .food-container-bottom {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .food-container-bottom img {
+        height: 200px;
+        width: 200px;
+        margin-left: 0px;
+    }
+
+    .food-container-middle {
+        flex-direction: column;
+    }
+
+    .p-bottom{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .food-container-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-responsive img{
+        top : 34px
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar img{
+        display: block;
+    }
+
+    .navbar-responsive{
+        display: block;
+    }
+
+    .navbar-responsive img{
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        height: 35px;
+        width: 35px;
+    }
+
+    .header {
+        height: max-content;
+        flex-direction: row;
+    }
+
+    .header a {
+        margin-top: 12px;
+    }
+
+    .header-div img{
+        top: 6px;
+    }
+
+    .container-recipe {
+        margin-top: 14px;
+        margin-bottom: 14px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    #inputfield {
+        width: 70px;
+        text-align: center;
+    }
+
+    .button {
+        width: 80px;
+    }
+
+    .icons-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .preparation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ingredients {
+        text-align: center;
+    }
+
+    td {
+        padding-left: 0px;
+    }
+
+    .portion {
+        display: flex;
+        justify-content: center;
+    }
+
+    .portion p {
+        margin-top: 9px;
+        padding-right: 6px;
+        font-size: 14px;
+    }
+
+
+}
+
+@media only screen and (max-width: 610px) {
+
+    .footer-Container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-Logo-Container {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-Menus {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .navbar a {
+        width: max-content;
+    }
+
+    .icons-container {
+        flex-direction: column;
+    }
+
+    .textarea-contact {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+
+    .backtoHome-Container{
+        margin: 0px;
+    }
+
+    .success-div{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .socialMediaLinksSize {
+        padding:  10px 10px 10px 10px;
+    }
+
+    .header-Logo{
+        margin-left: 24px;
+    }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #inputfield {
+        width: 32px;
+    }
+
+    .header-div img{
+        width: 235px;
+    }
+
+    .navbar-responsive img{
+        top:26px;
+    }
+
+}
+
+@media only screen and (max-width: 310px){
+
+    .navbar-responsive img{
+        top: 22px;
+        right: 10px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .icons-container p{
+        font-size: 12px;
+    }
+
+    .header-Logo{
+        width: 215px;
+    }
+
+    .header-div img{
+        width: 200px;
+    }
+
+    .socialMediaLinksSize{
+        width: 40px;
+    }
+
+    .icons-container-top{
+        flex-direction: column;
+        margin-top: 12px;
+    }
+
+    .icons-container-top p{
+        margin: 0px;
+    }
+
+}

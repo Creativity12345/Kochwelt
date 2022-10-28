@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept Schoko-Brownies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js"></script>
+</head>
+<body onload="render(ingredientsBrownie,amountBrownie); includeHTML()">
+
+    <!-- Header -->
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="container-recipe padding">
+        <h2>Schoko-Brownies</h2>
+        <img class="crossaint" src="img/brownie.jpg" alt="" srcset="">  
+        <div class="icons-container-top">
+            <p> <img src="img/clock-regular.svg" alt=""> 15min</p> 
+            <p> <img src="img/brain-solid.svg" alt=""> simpel</p> 
+            <p> <img src="img/calendar-alt-regular.svg" alt=""> 06.10.2022</p> 
+        </div>
+    </div>    
+    <div class="padding">
+        <div class="portion">
+            <p>Zutaten für</p>
+            <input id="inputfield" required type="number" min="" placeholder="4">
+            <button class="button" onclick="showMorePortions(ingredientsBrownie,amountBrownie)">Portion(en)</button>
+        </div>
+    </div>    
+    <div class="padding" id="table">
+        <table  style="width: 100%; margin-top: 24px;" id="ingredients"></table>
+    </div>
+    <div class="preparation padding">
+        <h2>Zubereitung</h2>
+        <div class="icons-container">
+            <p> <img src="img/clock-regular.svg" alt=""> Arbeitszeit ca. 10 Minuten</p>
+            <p> <img src="img/clock-regular.svg" alt=""> Gesamtzeit ca. 25 Minuten</p>
+        </div>
+        <div>
+            <p><b>1.</b> Ofen auf 175 Grad Ober-/ Unterhitze (Umluft: 155 Grad) vorheizen. Kleines Blech (28,5x23 cm) gut einfetten.Etwa 150 g der Zartbitterschokolade mit der Butter in einem kleinen Topf schmelzen. Etwas auskühlen lassen.</p>
+            <p><b>2.</b> Eier mit Vanillezucker und braunem Zucker schaumig schlagen. Schokomasse hinzugeben. Mehl mit Backpulver,Salz und Kakaopulver vermengen und mit der Eiermasse verrühren. Übrige Schokolade hacken und unter die Teigmasse heben.Den Teig in das Blech geben, glattstreichen und im vorgeheizten Ofen circa 20 Minuten backen. 1 Blech ergibt ca. 12 Brownies.</p>
+            <p><b>3.</b> Die Brownies am besten 1-2 Minuten zu früh aus dem Backofen nehmen, damit sie innen noch schön feucht sind. Zur Verzierung
+                kannst du noch 100g Zartbitterschokolade im Wasserbad schmelzen und über die Brownies gießen. <b>Yummy!</b>
+        </div>
+        <div>
+            <h4>Rezept erstellt von</h4>
+        </div>
+        <div style="display: flex; padding-bottom: 24px;">
+            <img class="profile-img" src="img/profil.PNG" alt=""> <p style="margin-left: 24px; margin-top: 30px;"><b>Tekin</b></p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div w3-include-html="templates/footer.html"></div>
+
+</body>
+</html>
